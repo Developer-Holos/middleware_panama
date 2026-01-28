@@ -5,7 +5,7 @@ def add_message(lead_id: int, text: str):
     print(f"Iniciando add_message para lead_id: {lead_id}")
 
 
-    msj_client_field_id = 951846  # ID del campo personalizado para mensajes del cliente
+    msj_client_field_id = 955666  # ID del campo personalizado para mensajes del cliente
     token = os.getenv("TOKEN_KOMMO")
     subdomain = os.getenv("SUBDOMAIN_KOMMO")
 
