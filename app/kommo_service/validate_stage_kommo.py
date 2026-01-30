@@ -46,10 +46,10 @@ def validate_stage_kommo(lead_id):
     
     logger.info(f"status_id obtenido: {status_id} (tipo: {type(status_id)})")
     logger.info(f"pipeline_id obtenido: {pipeline_id} (tipo: {type(pipeline_id)})")
-    logger.info(f"status_id esperado: 93482383")
+    logger.info(f"status_id esperado: 93482383 o 93482379")
     logger.info(f"pipeline_id esperado: 12109475")
     
-    resultado = status_id == 93482383 and pipeline_id == 12109475
+    resultado = status_id in [93482383, 93482379] and pipeline_id == 12109475
     logger.info(f"Resultado de validación: {resultado}")
     
     return resultado
